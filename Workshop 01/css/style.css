@@ -1,6 +1,6 @@
 /* Body and Background */
 body {
-    background: linear-gradient(120deg, #8e44ad, #3498db);
+    background: linear-gradient(120deg, #c4870d, #f09292);
     color: white;
     height: 100vh;
     display: flex;
@@ -19,7 +19,7 @@ body {
   
   /* Button Styles */
   .custom-btn {
-    background-color: #ff4081;
+    background-color: #2f6587;
   border-radius: 50px;
   font-size: 1.2rem;
   text-transform: uppercase;
@@ -33,7 +33,7 @@ body {
   }
   
   .custom-btn:hover {
-    background-color: #e040fb;
+    background-color: #db0e6e;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
   }
   
