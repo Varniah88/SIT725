@@ -1,0 +1,44 @@
+/* Body and Background */
+body {
+    background: linear-gradient(120deg, #8e44ad, #3498db);
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Heading */
+  h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.6);
+  }
+  
+  /* Button Styles */
+  .custom-btn {
+    background-color: #ff4081;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  top: 20px;
+  }
+  
+  .custom-btn:hover {
+    background-color: #e040fb;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Ensure content stays responsive */
+  .container {
+    max-width: 600px;
+  }
+  
