@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        async function calculate(event, operation) {
+            event.preventDefault();
+
+            const num1 = parseFloat(document.getElementById('num1').value);
+            const num2 = parseFloat(document.getElementById('num2').value);
+            const output = document.getElementById('output');
+
+            try {
+                let response, result;
+
+                if (operation === 'add' || operation === 'subtract') {
+                    response = await fetch(`http://localhost:3000/${operation}?num1=${num1}&num2=${num2}`);
+                } else {
+                    response = await fetch(`http://localhost:3000/${operation}`, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ num1, num2 }),
+                    });
+                }
+
+                result = await response.json();
+
+                if (response.ok) {
+                    if (operation === 'add') {
+                        output.value = `${result.num1} + ${result.num2} = ${result.sum}`;
+                    } else if (operation === 'subtract') {
+                        output.value = `${result.num1} - ${result.num2} = ${result.difference}`;
+                    } else if (operation === 'multiply') {
+                        output.value = `${result.num1} * ${result.num2} = ${result.multiplication}`;
+                    } else if (operation === 'divide') {
+                        output.value = `${result.num1} / ${result.num2} = ${result.division}`;
+                    }
+                } else {
+                    output.value = `Error: ${result.error}`;
+                }
+            } catch (error) {
+                output.value = 'Error: Unable to connect to the server.';
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Basic Calculator</h1>
+    <form>
+        <label for="num1">Number 1:</label>
+        <input type="number" id="num1" required>
+        <br>
+        <label for="num2">Number 2:</label>
+        <input type="number" id="num2" required>
+        <br><br>
+        <button onclick="calculate(event, 'add')">+</button>
+        <button onclick="calculate(event, 'subtract')">-</button>
+        <button onclick="calculate(event, 'multiply')">*</button>
+        <button onclick="calculate(event, 'divide')">/</button>
+    </form>
+    <br>
+    <label for="output">Result:</label>
+    <input type="text" id="output" class="output" readonly>
+</body>
+</html>
