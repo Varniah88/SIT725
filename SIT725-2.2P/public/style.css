@@ -1,7 +1,7 @@
 /* General Styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    background-color: #dae2e5;
     color: #333;
     text-align: center;
     margin: 0;
@@ -9,7 +9,7 @@ body {
 }
 
 h1 {
-    background-color: #007bff;
+    background-color: #0056b3;
     color: white;
     padding: 1rem;
     margin: 0;
@@ -51,7 +51,7 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #113a54;
 }
 
 .output {
