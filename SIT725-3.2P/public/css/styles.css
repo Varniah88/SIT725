@@ -1,0 +1,103 @@
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2, h5 {
+    color: #2e7d32; 
+  }
+  
+  p {
+    line-height: 1.6;
+  }
+
+  .nav-wrapper {
+    background-color: #2e7d32;
+  }
+  
+  .nav-wrapper .brand-logo {
+    font-family: 'Georgia', serif;
+  }
+  
+
+  .hero {
+    background: url('/images/hero.jpg') no-repeat center center/cover;
+    text-align: center;
+    padding: 60px 20px;
+    color: white;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  .hero p {
+    color: #333;
+  }
+  
+  .hero .btn-large {
+    background-color: #4caf50;
+    color: white;
+    border-radius: 5px;
+  }
+  
+
+  .card-title {
+    font-weight: bold;
+    color: #2e7d32;
+  }
+  
+  .card-content p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+
+  footer {
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+  }
+  
+  footer h5 {
+    font-size: 1.5rem;
+  }
+  
+  footer p {
+    font-size: 0.9rem;
+  }
+
+.card-image img {
+    height: 300px; 
+    width: 100%;   
+    object-fit: cover;
+  }
+  
+  #card2 {
+    width: 120%;   
+  }
+  
+  .card {
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+  }
+  .card-title {
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5); 
+  }
+  
+
+  .row .col {
+    margin-bottom: 20px; 
+  }
+  
+  .card-content p {
+    font-size: 1rem;
+    color: #555; 
+  }
