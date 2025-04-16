@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-     "test": "mocha test/*.test.js"
+    "test": "mocha test/*.test.js"
   },
   "repository": {
     "type": "git",
@@ -41,6 +41,7 @@
     "mocha": "^11.1.0",
     "mockingoose": "^2.16.2",
     "mongodb-memory-server": "^10.1.4",
+    "sinon": "^20.0.0",
     "supertest": "^7.1.0"
   }
 }
