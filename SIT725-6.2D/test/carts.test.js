@@ -8,7 +8,7 @@ const { deleteCartItem } = require('../controllers/cartController');
 chai.use(request);
 const { expect } = chai;
 
-describe('Cart API (Using Sinon for Complete Mocking)', () => {
+describe('Cart API', () => {
   let sandbox; // Use sandbox for isolated stubbing
   const userId = 'guest';
   const productIdShirt = '67fe59f25a12a4491066f868';
