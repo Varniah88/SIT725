@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Sustainable Fashion Market</title>
+  <!-- Materialize CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="/css/styles.css" rel="stylesheet">
+  <script src="/js/scripts.js"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="nav-wrapper green darken-3">
+      <a href="/" class="brand-logo center">Earthly Threads</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="/">Home</a></li>
+        <li><a href="/#products">Shop</a></li>
+        <li><a href="/about">About Us</a></li>
+        <li><a href="/contact">Contact Us</a></li>
+        <li><a href="/cart">Cart (<span id="cart-count">0</span>)</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Contact Form -->
+  <div class="container">
+    <h2 class="center-align">Contact Us</h2>
+    <p class="center-align">We’d love to hear from you! Please fill out the form below.</p>
+    <div class="row">
+      <form class="col s12" onsubmit="showSuccessModal(event)" action="/submit-form" method="post">
+        <div class="row">
+          <div class="input-field col s12 m6">
+            <input id="name" name="name" type="text" class="validate" required>
+            <label for="name">Name</label>
+          </div>
+          <div class="input-field col s12 m6">
+            <input id="email" name="email" type="email" class="validate" required>
+            <label for="email">Email</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <textarea id="message" name="message" class="materialize-textarea" required></textarea>
+            <label for="message">Message</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12 center-align">
+            <button type="submit" class="btn green">Send Message</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Success Modal -->
+<div id="successModal" class="modal">
+  <div class="modal-content">
+    <h4>Thank You!</h4>
+    <p>Thank you for reaching out! We’ll get back to you soon.</p>
+  </div>
+  <div class="modal-footer">
+    <a href="/" class="modal-close btn green">Close</a>
+  </div>
+</div>
+
+  <!-- Footer -->
+  <footer class="page-footer green darken-3">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 center-align">
+          <h5 class="white-text">Earthly Threads</h5>
+          <p class="grey-text text-lighten-4">Eco-friendly fashion for a better tomorrow.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Materialize JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="/js/scripts.js"></script>
+</body>
+</html>

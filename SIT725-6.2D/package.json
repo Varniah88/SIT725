@@ -1,0 +1,46 @@
+{
+  "name": "sit725-2025-t1-prac",
+  "version": "1.0.0",
+  "description": "sit 725 T1 week 6 prac",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+     "test": "mocha test/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Varniah88/SIT725.git"
+  },
+  "keywords": [
+    "Nodejs",
+    "Express",
+    "Materialize",
+    "DynamoDB",
+    "HTML",
+    "JS",
+    "CSS",
+    "MVC",
+    "Testing"
+  ],
+  "author": "Varniah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Varniah88/SIT725/issues"
+  },
+  "homepage": "https://github.com/Varniah88/SIT725#readme",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "chai": "^4.3.7",
+    "express": "^5.1.0",
+    "mongoose": "^8.13.2",
+    "request": "^2.88.2",
+    "save-dev": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "chai-http": "^4.3.0",
+    "mocha": "^11.1.0",
+    "mockingoose": "^2.16.2",
+    "mongodb-memory-server": "^10.1.4",
+    "supertest": "^7.1.0"
+  }
+}
